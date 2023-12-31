@@ -1,0 +1,120 @@
+/* * general style */
+:root{
+    --bg-color: #eeeeee47;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+
+/* * utilities */
+.navbar{
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #bbb;
+    --bs-navbar-active-color: #bbb;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler:hover{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+}
+.form-control{
+    color: #fff;
+    background-color: var(--bg-color);
+}
+.form-control:focus{
+    color: #fff;
+    background-color: var(--bg-color);
+    border-color: #fff;
+    outline: 0;
+    box-shadow:none;
+}
+.btn-white {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+}
+.color-light-gray{
+    color: #bbb;
+}
+.bg-grayy{
+    background-color: #333;
+}
+.bg-transparent-color{
+    background-color: var(--bg-color);
+}
+
+
+/* *for background img */
+.content{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),
+    url(../images/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* ! navbar */
+.navbar small{
+    font-size: 10px;
+}
+
+/* ! search form */
+.search form button{
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* ! forecast-table section */
+.forecast-table .row :nth-child(1){
+    border-radius: 6px 0 0 6px;
+    
+}
+.forecast-table .row .forecast{
+    border-right: 1px solid #fff;
+}
+.forecast-table .row :nth-child(3){
+    border-radius: 0 6px 6px 0;
+    border: none;
+}
+.forecast-table .forecast-header{
+    border-bottom: 1px solid #fff;
+}
+
+
+/* ! footer section */
+footer form button{
+    right: -50px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ul li{
+    transition: background-color 0.3s, color 0.3s;
+}
+ul li:hover{
+    background-color: #fff;
+    color: #000;
+}

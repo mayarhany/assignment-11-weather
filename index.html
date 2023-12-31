@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- * font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- * font awsome -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- * Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- * main stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- * media query -->
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div class="content">
+        <!-- ^ navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent p-3 text-white">
+            <div class="container">
+                <div class="logo d-flex justify-content-center align-items-center gap-3">
+                    <i class="fa-solid fa-cloud-sun fs-1"></i>
+                    <a class="navbar-brand d-flex flex-column justify-content-center align-items-center" href="#">
+                        <h1 class="h5 pb-1 m-0">Weather</h1>
+                        <small class="color-light-gray">tagling goes here</small>
+                    </a>
+                </div>
+              
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                  <li class="nav-item px-2">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav>
+        <!-- ^ search -->
+        <div class="search container my-5">
+            <form class="find-location position-relative">
+                <input type="text" id="search" class="form-control rounded-pill p-3" placeholder="Find your location...">
+                <button type="button" class="btn btn-white position-absolute rounded-pill px-4">Find</button>
+            </form>
+        </div>
+
+        <!-- ^ forecast-table -->
+        <div class="forecast-table mb-5">
+            <div class="container">
+                <div class="row text-white gap-lg-0 gap-2" id="forecast">
+                    <!-- <div class="col-lg-4 bg-transparent-color today forecast">
+                        <div id="today" class="forecast-header pt-2 d-flex justify-content-between align-items-center">
+                            <p class="day">monday</p>
+                            <p class="date">1januray</p>
+                        </div>
+                        <div id="current" class="forecast-content ">
+                            <h5 class="location py-3">location</h5>
+                            <div class="degree">
+                                <h2 class="num display-1 fw-semibold">15.2<sup>o</sup>C</h2>
+                            </div>
+                            <img src="./images/img1.jpg" width="90" alt="">
+                            <p class="custom py-2">Patchy rain possible</p>
+                            <div class="spans d-flex gap-3 py-3">
+                                <span>
+                                    <img src="./images/icon-umberella.png" width="30" alt="">
+                                    20%
+                                </span>
+                                <span>
+                                    <img src="./images/icon-wind.png" width="30" alt="">
+                                    18km/h
+                                </span>
+                                <span>
+                                    <img src="./images/icon-compass.png" width="30" alt="">
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 bg-transparent-color2 text-center forecast">
+                        <div class="forecast-header pt-2">
+                            <p class="day">monday</p>
+                            
+                        </div>
+                        <div class="forecast-content">
+                            <div class="forecast-icon py-5">
+                                <img src="./images/img1.jpg" width="50" alt="">
+                            </div>
+                            <div class="degree">
+                                <h2 class="num">15.2<sup>o</sup> C</h2>
+                            </div>
+                            <small>15.2 <sup>o</sup></small>
+                            <p class="custom pt-2">Patchy rain possible</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 bg-transparent-color text-center forecast">
+                        <div class="forecast-header pt-2">
+                            <p class="day">monday</p>
+                            
+                        </div>
+                        <div class="forecast-content">
+                            <div class="forecast-icon py-5">
+                                <img src="./images/img1.jpg" width="50" alt="">
+                            </div>
+                            <div class="degree">
+                                <h2 class="num">15.2<sup>o</sup> C</h2>
+                            </div>
+                            <small>15.2 <sup>o</sup></small>
+                            <p class="custom pt-2">Patchy rain possible</p>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ^ footer -->
+        <footer class="py-3 bg-grayy">
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                    <form class="find-location position-relative">
+                        <input type="text" class="form-control rounded-pill p-3" placeholder="Enter your email to subscribe...">
+                        <button type="button" class="btn btn-white position-absolute rounded-pill px-4">Subscribe</button>
+                    </form>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 mt-lg-0 mt-4">
+                        <ul class="social-links d-flex justify-content-between align-items-center mb-0 fs-4 text-white">
+                            <li class="icon bg-transparent-color d-flex justify-content-center align-items-center">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="icon bg-transparent-color d-flex justify-content-center align-items-center">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="icon bg-transparent-color d-flex justify-content-center align-items-center">
+                                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="icon bg-transparent-color d-flex justify-content-center align-items-center">
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-4 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+    <!-- * bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- * main js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@media screen and (max-width:992px) {
+
+
+    /* *for background img */
+    .content{
+        height: auto;
+    }
+
+    /* ! forecast-table section */
+
+    .forecast-table .row :nth-child(1){
+        border-radius: 6px 6px 0 0;
+    }
+    .forecast-table .row :nth-child(3){
+        border-radius: 0 0 6px 6px;
+    }
+
+
+    .forecast-table .row .forecast{
+        border-right: none;
+    }
+}
